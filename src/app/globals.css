@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-100: #edf8ff;
+  --primary-200: #e0f2fe;
+  --primary-300: #a0ccea;
+  --primary-400: #99bfd9;
+  --primary-450: #97cff5;
+  --primary-500: #c7e5fa;
+  --primary-550: #b3d8f3;
+  --primary-600: #6195b7;
+}
+
+body {
+  background: var(--primary-100);
+  font-family: Arial, Helvetica, sans-serif;
+}
