@@ -13,10 +13,10 @@ export default function BMICalculator() {
   // IMC = peso (kg) / (altura (m)²)
   // Essa fórmula, conhecida como índice de Quetelet, é amplamente validada
   // por estudos científicos e utilizada pela Organização Mundial da Saúde.
-  const calcularIMC = (peso: any, altura: any) => {
+  const calcularIMC = (peso: string, altura: string): string => {
     const p = parseFloat(peso);
     const h = parseFloat(altura);
-    if (h === 0) return 0;
+    if (h === 0) return "0";
     const imc = p / (h * h);
     return imc.toFixed(2);
   };
