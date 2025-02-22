@@ -13,6 +13,11 @@ A Calculadora de IMC permite que o usuário insira seu peso (em kg) e altura (em
 Os resultados são exibidos dinamicamente, acompanhados de uma classificação que varia de "Abaixo do normal" até "Obesidade grau III", conforme os intervalos definidos pela Organização Mundial da Saúde e outros estudos epidemiológicos.
 
 ---
+## Preview
+
+
+![Foto](https://raw.githubusercontent.com/gabrielnips/bmc-imc-calculator/refs/heads/main/preview.jpeg)
+---
 
 ## Tecnologias Utilizadas
 
