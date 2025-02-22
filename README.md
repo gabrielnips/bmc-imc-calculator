@@ -70,12 +70,6 @@ Contribuições são bem-vindas! Se você deseja melhorar o projeto, sinta-se à
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
 ## Créditos
 
 - **Referências Científicas:** Baseado em estudos da Organização Mundial da Saúde e pesquisas epidemiológicas sobre o IMC.
