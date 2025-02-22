@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Calculadora de IMC (BMI Calculator)
 
-## Getting Started
+Uma ferramenta educativa para calcular o Índice de Massa Corporal (IMC) de forma simples e intuitiva. Este projeto foi desenvolvido com React e utiliza o conceito de componentes funcionais e hooks para gerenciar estados e cálculos em tempo real.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descrição
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Calculadora de IMC permite que o usuário insira seu peso (em kg) e altura (em metros), além de selecionar o gênero e a faixa etária. Com base nesses dados, o sistema calcula o IMC utilizando a fórmula clássica:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **IMC = Peso / (Altura²)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Os resultados são exibidos dinamicamente, acompanhados de uma classificação que varia de "Abaixo do normal" até "Obesidade grau III", conforme os intervalos definidos pela Organização Mundial da Saúde e outros estudos epidemiológicos.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React** – Biblioteca JavaScript para construção de interfaces.
+- **Next.js** – (Indicativo pela diretiva `"use client"`) Framework para aplicações React.
+- **Tailwind CSS** – Framework de CSS utilitário para estilização rápida e responsiva.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Como Usar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone o repositório:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/gabrielnips/bmc-imc-calculator.git
+   cd bmc-imc-calculator
+   ```
+
+2. **Instale as dependências:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o projeto em ambiente de desenvolvimento:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse a aplicação:**
+   
+   Abra seu navegador e acesse `http://localhost:3000` para visualizar a calculadora.
+
+5. **Utilização:**
+   - Insira seu peso e altura nos campos indicados.
+   - Selecione o gênero e a faixa etária.
+   - Veja o cálculo do IMC e sua classificação sendo exibidos dinamicamente.
+
+---
+
+## Considerações Importantes
+
+- **Ferramenta Educativa:** Esta calculadora é destinada apenas a fins informativos e não substitui a avaliação médica. Consulte um profissional de saúde para diagnósticos precisos.
+- **Fórmula do IMC:** A mesma fórmula é utilizada para homens e mulheres, porém a interpretação dos resultados pode variar de acordo com outros fatores individuais, como a composição corporal.
+
+---
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você deseja melhorar o projeto, sinta-se à vontade para:
+
+- Abrir **issues** para reportar bugs ou sugerir melhorias.
+- Realizar **pull requests** com novas funcionalidades ou correções.
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+## Créditos
+
+- **Referências Científicas:** Baseado em estudos da Organização Mundial da Saúde e pesquisas epidemiológicas sobre o IMC.
+
+---
