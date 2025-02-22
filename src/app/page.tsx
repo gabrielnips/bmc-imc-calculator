@@ -149,6 +149,62 @@ export default function BMICalculator() {
             </p>
           </div>
         </div>
+
+        {imc !== null && (
+          <div className="w-full max-w-4xl p-5 bg-primary200 rounded-lg text-center flex gap-5 md:flex-row flex-col">
+            <div>
+              <h2 className="text-primary600 text-xl font-medium mb-3">
+                Resultado:
+              </h2>
+              <p className="text-primary400 text-medium text-3xl">IMC: {imc}</p>
+              <p className="text-primary400 text-light text-md">
+                Peso: {weight}kg
+              </p>
+              <p className="text-primary400 text-light text-md">
+                Altura: {height}m
+              </p>
+              <p className="text-primary400 text-light text-md">
+                Gênero: {gender}
+              </p>
+              <p className="text-primary400 text-light text-md">
+                Faixa Etária: {ageGroup}
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-primary600 text-xl font-medium mb-3">
+                Classificação do IMC:
+              </h2>
+              <div className="flex gap-2 max-w-[642px] md:flex-row flex-col">
+                <p className="text-primary400 text-sm">
+                  <strong>18,5 ou menos:</strong> Abaixo do normal - Procure um
+                  médico. Pode ser característica do organismo ou desnutrição.
+                </p>
+                <p className="text-primary400 text-sm mt-2">
+                  <strong>Entre 18,6 e 24,9:</strong> Normal - Mantenha um
+                  estilo de vida ativo e alimentação equilibrada.
+                </p>
+                <p className="text-primary400 text-sm mt-2">
+                  <strong>Entre 25,0 e 29,9:</strong> Sobrepeso - Pré-obesidade.
+                  Pode estar associado a diabetes e hipertensão.
+                </p>
+                <p className="text-primary400 text-sm mt-2">
+                  <strong>Entre 30,0 e 34,9:</strong> Obesidade grau I - Sinal
+                  de alerta. Inicie mudanças e acompanhamento com profissionais.
+                </p>
+                <p className="text-primary400 text-sm mt-2">
+                  <strong>Entre 35,0 e 39,9:</strong> Obesidade grau II -
+                  Mudanças no estilo de vida com acompanhamento profissional são
+                  essenciais.
+                </p>
+                <p className="text-primary400 text-sm mt-2">
+                  <strong>Acima de 40,0:</strong> Obesidade grau III - Risco de
+                  doenças graves. Tratamento urgente necessário.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       <div
         className="fixed bottom-4 right-4 z-50 rounded-2xl border-2 border-solid border-primary600 githubButton cursor-pointer "
